@@ -42,7 +42,7 @@ for (int j = 0; j < result.GetLength(1); j++)
     {
         sum += result[i, j];
     }
-    AvgColumn[j] = sum / result.GetLength(0);
+    AvgColumn[j] = Math.Round (sum / result.GetLength(0),2);
     sum = 0;
 }
 Console.Write("Среднее арифметическое каждого столбца: ");
